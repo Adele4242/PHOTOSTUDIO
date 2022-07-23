@@ -29,12 +29,6 @@ var swiper = new Swiper(".mySwiperfirst", {
             });
 
 
-let burger = document.querySelector('.header__burger')
-let headList = document.querySelector('.header__list')
-
-burger.addEventListener('click', function() {
-burger.classList.toggle('header__burger_active')headList.classList.toggle('header__list_active')
-})
 
 let overlay = document.querySelector('.overlay');
 let close = document.querySelector('.popup__close');
@@ -91,3 +85,11 @@ otzyvBtn.addEventListener('click', function(){
     locations.style.display = 'none'
     otzyv.style.display = 'flex'
 })
+
+//
+//let burger = document.querySelector('.header__burger')
+//let headList = document.querySelector('.header__list')
+//
+//burger.addEventListener('click', function() {
+//burger.classList.toggle('header__burger_active')headList.classList.toggle('header__list_active')
+//})
