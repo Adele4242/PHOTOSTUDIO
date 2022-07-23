@@ -1,0 +1,39 @@
+.ideas{
+  padding: 66px 0;
+  background-color: #F2F4F4;
+  &__title{
+    @include text(600, 36px, 120%, #333333);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  &__accordion{
+    margin-bottom: 15px;
+    position: relative;
+    &-active{
+      .ideas__accordion-down{
+        display: block;
+      }
+      .ideas__accordion-action{
+        transform: rotate(180deg);
+      }
+    }
+    &-text{
+      @include text(500, 16px, 26px, #4A4A4A);
+    }
+    &-down{
+      display: none;
+    }
+    &-info{
+      @include text(500, 16px, 26px, #4A4A4A);
+    }
+    &-action{
+      position: absolute;
+      bottom: -10px;
+      right: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

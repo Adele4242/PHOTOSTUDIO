@@ -1,0 +1,48 @@
+.footer {
+  background-color: #F2F4F4;
+  &__top {
+    padding: 60px 0 32px;
+    display: flex;
+    align-items: center;
+    column-gap: 188px;
+    border-bottom: 1px solid #B1B1B1;
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    column-gap: 55px;
+  }
+  &__link {
+    @include text(700, 16px, 16px, #4A4A4A);
+    text-align: center;
+    transition: .5s;
+    &:hover {
+      color: #E97522;
+      transition: .5s;
+    }
+  }
+  &__bot{
+    padding: 35px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 32px;
+    &-social{
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+    }
+    &-icon{
+      cursor: pointer;
+      svg{
+        path{
+          transition: .3s;
+          &:hover{
+            fill: #E97522;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+}

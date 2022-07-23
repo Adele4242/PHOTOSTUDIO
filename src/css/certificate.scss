@@ -1,0 +1,64 @@
+.certificate{
+  padding: 82px 0 92px;
+  &__title{
+    @include text(600, 36px, 120%, #333333);
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    padding: 0 86px 0 120px;
+    background: #F2F4F4;
+    border-radius: 25px;
+  }
+  &-left{
+    width: 70%;
+    &-subtitle{
+      @include text(500, 14px, 120%, #C1C1C1);
+      letter-spacing: 1px;
+    }
+    &-title{
+      @include text(600, 48px, 140%, #4A4A4A);
+      letter-spacing: 1px;
+      margin: 8px 0 52px;
+    }
+    &-list{
+      list-style-type: none;
+    }
+    &-item{
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      margin-bottom: 26px;
+    }
+  }
+  &-right{
+    position: relative;
+    &::before{
+      content: url("../images/certificate/certificate-line.svg");
+      position: absolute;
+      top: 157px;
+      right: -206px;
+      overflow: hidden;
+    }
+    &-img{
+      width: 100%;
+    }
+    &-desc{
+      @include text(500, 16px, 140%, #333333);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    &-btn{
+      padding: 14px 88px;
+      @include text(600, 16px, 20px, #FFFFFF);
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 0 13px 42px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}

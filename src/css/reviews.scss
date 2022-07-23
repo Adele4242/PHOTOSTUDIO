@@ -1,0 +1,45 @@
+.reviews{
+  padding: 60px 0 112px;
+  &__title{
+    @include text(600, 36px, 120%, #333333);
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  &__card{
+    text-align: center;
+    &-img{
+      max-width: 208px;
+      width: 100%;
+      height: 227px;
+      margin: 0 auto 31px;
+    }
+    &-center{
+      text-align: center;
+    }
+    &-title{
+      @include text(600, 24px, 24px, #4A4A4A);
+      text-align: center;
+    }
+    &-desc{
+      @include text(500, 16px, 26px, #333333);
+      text-align: center;
+      margin: 14px 0 8px;
+    }
+    &-link{
+      @include text(600, 16px, 24px, #E97522);
+      text-align: center;
+    }
+  }
+  &__btn{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @include text(600, 16px, 20px, white);
+    margin: 17px auto;
+    display: block;
+  }
+}

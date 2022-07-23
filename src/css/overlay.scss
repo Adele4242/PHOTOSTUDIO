@@ -1,0 +1,148 @@
+.overlay{
+  width: 100%;
+  height: 100vh;
+  background: #00000080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  padding: 0 50px;
+}
+
+.popup{
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__close{
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__call{
+    width: 1000px;
+    display: flex;
+  }
+  &__img{
+    width: 50%;
+  }
+  &__form{
+    width: 50%;
+    padding: 81px 65px;
+    background-color: #F2F4F4;
+    &-title{
+      @include text(600, 30px, 120%, #4A4A4A);
+      white-space: nowrap;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    &-subtitle{
+      @include text(500, 12px, 16px, #585858);
+      text-align: center;
+    }
+    &-subtitle span{
+      text-decoration: underline;
+    }
+    &-content{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+      input:not(:checked) {
+        color: #E31E24;
+      }
+    }
+    &-input{
+      &:invalid{
+        border: 1px solid #E31E24;
+      }
+      @include text(500, 12px, 12px, #B1B1B1);
+      background: #FFFFFF;
+      border: 1px solid #DDDEE4;
+      border-radius: 5px;
+      width: 100%;
+      height: 48px;
+      padding-left: 16px;
+      &::placeholder{
+        @include text(500, 12px, 12px, #E31E24);
+        opacity: 0.4;
+      }
+    }
+    &-option{
+      @include text(500, 12px, 12px, #B1B1B1);
+      background: #FFFFFF;
+      border: 1px solid #DDDEE4;
+      border-radius: 5px;
+      width: 100%;
+      height: 48px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &-label{
+      @include text(300, 13px, 15px, #0F0F10);
+      margin-bottom: 8px;
+    }
+    &-textarea{
+      border: none;
+        width: 100%;
+        height: 150px;
+        resize: none;
+      padding-top: 15px;
+      padding-left: 15px;
+      @include text(500, 12px, 12px, #4A4A4A);
+    }
+    &-btn{
+      width: 100%;
+      @include text(600, 16px, 20px, #FFFFFF);
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin: 32px 0 16px;
+    }
+  }
+  &__gratitude{
+    width: 662px;
+    padding: 88px 83px 89px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::before {
+      content: url("../images/price/Rectangle 39.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      overflow: hidden;
+    }
+    &::after {
+      content: url("../images/price/Rectangle 40.svg");
+      position: absolute;
+      top: 102px;
+      right: 0;
+      overflow: hidden;
+    }
+    &-title{
+      @include text(600, 36px, 120%, #4A4A4A);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    &-subtitle{
+      @include text(500, 16px, 22px, #121621);
+      text-align: center;
+      opacity: 0.4;
+    }
+  }
+  &__locations{
+    width: 1000px;
+    display: flex;
+  }
+}
+
+

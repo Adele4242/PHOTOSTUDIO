@@ -1,0 +1,31 @@
+
+.btn {
+  @include text(500, 12px, 15px, #FFFFFF);
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  border-radius: 10px;
+  transition: .5s;
+  padding: 22px 28px;
+  &:hover {
+    transition: .5s;
+    background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  }
+  &_white{
+    @include text(500, 12px, 15px, #E97522);
+    letter-spacing: 1px;
+    border: 1px solid #E97522;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 24px;
+    transition: .5s;
+    &:hover {
+      transition: .5s;
+      color: #FFFFFF;;
+      background: #E97522;
+    }
+  }
+}
+

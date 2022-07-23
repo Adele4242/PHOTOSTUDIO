@@ -1,0 +1,111 @@
+.price{
+  padding: 118px 0 190px;
+  position: relative;
+  &::before{
+    content: url("../images/price/price-line.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__title{
+    @include text(700, 36px, 120%, #333333);
+    text-align: center;
+    margin-bottom: 102px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+  }
+  &__card{
+    width: calc(33.33333% - 14.666666px);
+    transition: .5s;
+    opacity: 70%;
+    position: relative;
+    &::before {
+      content: url("../images/price/Rectangle 39.svg");
+      position: absolute;
+      top: 0;
+      right: 0;
+      overflow: hidden;
+    }
+    &::after {
+      content: url("../images/price/Rectangle 40.svg");
+      position: absolute;
+      top: 102px;
+      right: 0;
+      overflow: hidden;
+    }
+    &:hover{
+      opacity: 100%;
+      transition: .5s;
+      transform: translateY(-20px);
+    }
+    &-info{
+      padding: 48px 33px 33px 45px;
+    }
+    &-type{
+      @include text(600, 18px, 120%, #4A4A4A);
+    }
+    &-money{
+      @include text(700, 56px, 120%, #333333);
+      margin: 16px 0 4px;
+    }
+    &-location{
+      @include text(600, 14px, 140%, #838383);
+      margin-bottom: 41px;
+    }
+    &-list{
+      list-style-type: none;
+    }
+    &-item{
+      display: flex;
+      column-gap: 8px;
+      margin-bottom: 19px;
+      &-text{
+        @include text(500, 16px, 140%,  #333333);
+      }
+    }
+    &-title{
+      @include text(600, 16px, 140%, #333333);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    &-row{
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      padding: 0 13px;
+      margin-bottom: 58px;
+      &-text{
+        @include text(500, 12px, 120%, #333333);
+        padding: 6px;
+        background: #FFFFFF;
+        border: 1px solid #C2C2C2;
+        border-radius: 5px;
+      }
+    }
+  }
+  &__btn{
+    padding: 14px 88px;
+    @include text(600, 16px, 20px, #FFFFFF);
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0 13px 42px;
+  }
+}
+
+
+.one{
+  background: #F2F4F4;
+  border-radius: 16px;
+}
+.two{
+  background: #F9F4EE;
+  border-radius: 16px;
+}
+.three{
+  background: #F5D9C6;
+  border-radius: 16px;
+}
